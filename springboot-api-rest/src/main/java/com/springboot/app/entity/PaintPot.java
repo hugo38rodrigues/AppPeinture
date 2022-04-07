@@ -1,6 +1,7 @@
 package com.springboot.app.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "PAINTPOTS")
@@ -10,15 +11,20 @@ public class PaintPot {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "paintQuantity")
+    @ManyToMany(mappedBy = "paintPots")
+    List<ScaleModel> scaleModels;
+
+    @Column(name = "paintQuantity", length = 3)
     private int paintQuantity;
 
-    @Column(name = "quantity")
+    @Column(name = "quantity", length = 2)
     private int quantity;
-    @Column(name = "area")
+
+    @Column(name = "area", length = 3)
     private int area;
 
-    //TODO Ajouter clé étrangère de la table de conversion
+    @ManyToOne()
+    private ConversionPot conversionPot;
 
     public PaintPot() {
     }

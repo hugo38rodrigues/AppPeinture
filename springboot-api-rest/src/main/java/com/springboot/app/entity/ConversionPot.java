@@ -10,16 +10,16 @@ public class ConversionPot {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "type")
+    @Column(name = "type", nullable = false, length = 30)
     private String potName;
 
-    @Column(name = "humbrol")
+    @Column(name = "humbrol", nullable = false, length = 4)
     private String humbrol;
 
-    @Column(name = "revell")
+    @Column(name = "revell", nullable = false, length = 15)
     private String revell;
 
-    @Column(name = "italeri")
+    @Column(name = "italeri", nullable = false, length = 4)
     private String italeri;
 
     public ConversionPot() {
