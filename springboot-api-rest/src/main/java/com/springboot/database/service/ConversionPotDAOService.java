@@ -1,6 +1,6 @@
-package database.service;
+package com.springboot.database.service;
 
-import database.entity.ConversionPot;
+import com.springboot.database.entity.ConversionPot;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

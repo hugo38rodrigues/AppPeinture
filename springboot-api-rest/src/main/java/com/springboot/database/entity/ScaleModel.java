@@ -1,4 +1,4 @@
-package database.entity;
+package com.springboot.database.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -7,9 +7,11 @@ import java.util.List;
 @Entity
 @Table(name = "SCALEMODELS")
 public class ScaleModel implements Serializable {
-
+/*
     @ManyToMany(mappedBy = "scaleModels")
     List<PaintPot> paintPots;
+
+ */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

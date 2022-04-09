@@ -1,4 +1,4 @@
-package database.entity;
+package com.springboot.database.entity;
 
 import javax.persistence.*;
 import java.util.List;
@@ -6,9 +6,11 @@ import java.util.List;
 @Entity
 @Table(name = "PAINTPOTS")
 public class PaintPot {
-
+/*
     @ManyToMany(mappedBy = "paintPots")
     List<ScaleModel> scaleModels;
+
+ */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
