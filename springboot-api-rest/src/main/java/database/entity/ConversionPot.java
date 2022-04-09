@@ -1,4 +1,4 @@
-package com.springboot.app.entity;
+package database.entity;
 
 import javax.persistence.*;
 
@@ -36,39 +36,45 @@ public class ConversionPot {
         return id;
     }
 
-    public String getPotName() {
-        return potName;
-    }
-
-    public String getHumbrol() {
-        return humbrol;
-    }
-
-    public String getRevell() {
-        return revell;
-    }
-
-    public String getItaleri() {
-        return italeri;
-    }
-
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getPotName() {
+        return potName;
     }
 
     public void setPotName(String potName) {
         this.potName = potName;
     }
 
+    public String getHumbrol() {
+        return humbrol;
+    }
+
     public void setHumbrol(String humbrol) {
         this.humbrol = humbrol;
+    }
+
+    public String getRevell() {
+        return revell;
     }
 
     public void setRevell(String revell) {
         this.revell = revell;
     }
 
+    public String getItaleri() {
+        return italeri;
+    }
+
     public void setItaleri(String italeri) {
         this.italeri = italeri;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("<ConversionPot [id=%s, type=%s, Humbrol=%s, Revell=%s, Italeri=%s]>",
+                this.id, this.potName, this.humbrol, this.revell, this.italeri);
     }
 }

@@ -1,4 +1,4 @@
-package com.springboot.app.entity;
+package database.entity;
 
 import javax.persistence.*;
 import java.util.List;
@@ -7,13 +7,11 @@ import java.util.List;
 @Table(name = "PAINTPOTS")
 public class PaintPot {
 
+    @ManyToMany(mappedBy = "paintPots")
+    List<ScaleModel> scaleModels;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
-    @ManyToMany(mappedBy = "paintPots")
-    List<ScaleModel> scaleModels;
-
     @Column(name = "paintQuantity", length = 3)
     private int paintQuantity;
 
@@ -65,5 +63,11 @@ public class PaintPot {
 
     public void setArea(int area) {
         this.area = area;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("<ConversionPot [id=%s, paintQuantity=%s, quantity=%s, area=%s]>",
+                this.id, this.paintQuantity, this.quantity, this.area);
     }
 }

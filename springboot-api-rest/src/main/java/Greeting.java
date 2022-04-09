@@ -1,5 +1,3 @@
-package com.springboot.app;
-
 public class Greeting {
     private final long id;
     private final String content;
