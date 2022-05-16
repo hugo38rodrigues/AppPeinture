@@ -8,12 +8,16 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 @RequestMapping("/greeting")
 @Slf4j
 public class GreetingController {
+
+    @Autowired
+    ConversionPotRespository conversionPotRespository;
 
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
@@ -29,5 +33,15 @@ public class GreetingController {
         log.info("{}",pot);
         conversionPotRespository.save(pot);
         return ResponseEntity.status(HttpStatus.CREATED).body("Votre objet a bine été crée");
+    }
+
+    @GetMapping("recuperation/object/{id}")
+    public ResponseEntity<ConversionPot> recuperation(@RequestParam(value = "id")Long id){
+        Optional<ConversionPot> pot = conversionPotRespository.findById(id);
+        if(pot.isPresent()){
+            return ResponseEntity.status(HttpStatus.FOUND).body(pot.get());
+        }else{
+            return ResponseEntity.notFound().build();
+        }
     }
 }
