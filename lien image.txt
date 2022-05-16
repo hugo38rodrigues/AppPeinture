@@ -1,0 +1,4 @@
+icon edit :<a target="_blank" href="https://icons8.com/icon/71201/modifier">Modifier</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+icon delete : <a target="_blank" href="https://icons8.com/icon/99940/supprimer">Supprimer</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+icon  croix : <a target="_blank" href="https://icons8.com/icon/7Tnx21L5k1yA/cross-mark-button">Cross Mark Button</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+icon  check: <a target="_blank" href="https://icons8.com/icon/9fp9k4lPT8us/check-mark-button">Check Mark Button</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
