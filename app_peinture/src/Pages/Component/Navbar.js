@@ -11,11 +11,9 @@ const Navbar = () => {
       <NavLink exact to="/">
         <FontAwesomeIcon icon={faHouseChimney} />
       </NavLink>
-
       <NavLink exact to="/Maquette">
         <FontAwesomeIcon icon={faJetFighter} />
       </NavLink>
-
       <NavLink exact to="/Peinture">
         <FontAwesomeIcon icon={faFill} />
       </NavLink>
