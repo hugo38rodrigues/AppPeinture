@@ -1,0 +1,21 @@
+###########Les Requetes############
+----------- Get--------------
+ Sur la page Home: Nom de la maquette, la photo.
+ Sur la page Peinture: Status du pots, couleur, Type, code de référence, marque.
+ Sur la page de modification de pot: Status du pots, couleur, Type, code de référence, marque.
+
+ Sur la page de mail: Status des pots,couleur, type, code de référence, marque.
+ Sur la page liste de pot :  Status du pots, couleur, Type, code de référence, marque.
+ Sur le formulaire de creation des maquette: marque de maquette
+
+ ----------------------- POST ----------------------------------
+ Envois de formulaire de maquette: Nom , marque, liste des pots ajouté.
+ Envois de formulaire de création de pots: marque, couleur, type, code de référence
+----------------------- DELETE ----------------------------------
+Page Home : Suppression de la maquette
+Page Pots : Suppression de pots de peinture
+
+----------------------- UPDATE ----------------------------------
+Modification d'un pots: Status du pots, couleur, Type, code de référence, marque.
+
+Modification d'une maquette: Nom, marque, photo, liste de peinture.
