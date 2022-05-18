@@ -1,17 +1,19 @@
-input{
-    position: relative;
-    width: 858px;
-    height: 80px;
-    background: #FFFFFF;
-    border-radius: 5px;
+.ctn-SearchBar{ 
+    grid-column-start: 2;
+    border-radius:1rem ;
+    
+    
+    input{
+        width: 800px;
+        height: 60px;
+        font-family: $font-1;
+        font-size:45px ;
+        border-radius: 1rem;
+       
+    }
     ::placeholder{
-        position: absolute;
-        width: 450px;
-        height: 80px;
-        left: 0px;
-        top: 0px;
-
-        background: #FFFFFF;
+        font-family: $font-1;
+        text-align: center;
+        opacity:0.8; 
     }
 }
-    

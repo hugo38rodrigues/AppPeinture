@@ -1,17 +1,22 @@
-h1{
-    position: absolute;
-    left: 364px;
-    right: 365px;
-    top: 39px;
-    bottom: 888px;
-
-    font-family: $font-1;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
-    text-align: center;
-
-    color: #FFFFFF;
+.Home{
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+    grid-auto-rows: 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    align-self: center;
+    .cnt-Home{
+        grid-column-start:2 ;
+        h1{
+            grid-column-start: 2;
+            font-family: $font-1;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+   
+   
 }
-

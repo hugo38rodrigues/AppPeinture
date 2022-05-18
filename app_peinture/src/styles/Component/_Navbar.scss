@@ -1,15 +1,46 @@
 .Navbar{
-    position: absolute;
-    width: 156px;
-    height: 318px;
-    left: 15px;
-    top: 182px;
-    background: #FFFFFF;
-    display: grid;
-    justify-content: center;
-    gap: 4px;
-    align-content: center;
-    grid-auto-flow: row;
-    font-size: 5rem;
-  }
+  background: #FFFFFF;
+  width: 6rem;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  font-size: 5rem;
+  padding: 10px;
+  margin: 40px;
+  display: grid;
+  grid-template: repeat(3,1fr);
+  border-radius: 3rem;
+
+  
+  :nth-child(1){
+    grid-column-start:1;
+    grid-auto-rows: 120px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    align-self: center;
+    justify-self: center;
+    color:rgba(0, 0, 0, 0.589)
+    
+    }
+  :nth-child(2){
+    grid-column-start:1;
+    grid-row-start:2;
+    align-self: center;
+    justify-self: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    color:rgba(0, 0, 0, 0.589)
+    
+    }
+  :nth-child(3){
+    grid-column-start:1;
+    grid-row-start:3; 
+    align-self: center;
+    justify-self: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    color:rgba(0, 0, 0, 0.589)
+    }
+    :active{
+      color:azure;
+    }
+}
+
+
 
